@@ -1,0 +1,95 @@
+đau nhiều nơi:đau khắp người.
+nhức đầu:đau đầu.
+nhứt đầu:đau đầu.
+hắt hơi:hắt xì.
+hôi miệng:hơi thở có mùi hôi.
+hơi sốt:sốt nhẹ.
+không có sức lực:mệt mỏi.
+ngạt mũi:nghẹt mũi.
+ngứa mắt:mắt ngứa.
+sốt hơi hơi:sốt nhẹ.
+sổ mũi:chảy nước mũi.
+đau toàn thân:đau khắp người.
+nước mũi chảy xuống miệng:chảy dịch mũi sau.
+nước mũi chảy xuống họng:chảy dịch mũi sau.
+amidan bị sưng:amidan sưng to.
+ho đờm ra máu:ho khạc đờm có màu.
+ho có đờm lẫn máu:ho khạc đờm có màu.
+ho có đờm và có máu: ho khạc đờm có màu.
+rét toàn thân:rét run toàn thân.
+lạnh toàn thân:rét run toàn thân.
+lạnh run người:rét run toàn thân.
+tím môi:môi tái.
+môi tím tái:môi tái.
+sởn gai ốc:nổi da gà.
+nổi gai ốc:nổi da gà.
+hụt hơi:khó thở.
+thở gấp:thở nhanh.
+đỏ mặt:mặt đỏ.
+khô da:da khô.
+uống nhiều nước:khát nước.
+muốn uống nước:khát nước.
+rét người:sốt rét.
+đổ mồ hôi liên tục:vã mồ hôi.
+sốt mỗi ngày:sốt hàng ngày.
+sốt định kì:sốt hàng ngày.
+sốt dữ dội:sốt thành cơn dữ dội.
+sốt nặng từng cơn:sốt thành cơn dữ dội.
+hết sốt bị rét:rét người sau khi hết sốt.
+hết sốt người bị lạnh:rét người sau khi hết sốt.
+qua cơn sốt bị lạnh người:rét người sau khi hết sốt.
+qua cơn sốt thì bị lạnh người:rét người sau khi hết sốt.
+qua cơn sốt thì bị rét:rét người sau khi hết sốt.
+sốt cao kéo dài:sốt cao liên tục.
+thường xuyên mất ngủ:mất ngủ nhiều.
+ói:nôn.
+nôn mữa:nôn.
+ói mữa:nôn.
+bị tiêu chảy liên tục:tiêu chảy nhiều.
+thường xuyên bị tiêu chảy:tiêu chảy nhiều.
+nước tiểu có máu:tiểu ra huyết sắc tố.
+tiểu ra máu:tiểu ra huyết sắc tố.
+nước tiểu có lẫn máu:tiểu ra huyết sắc tố.
+hạ huyết áp:tụt huyết áp.
+da tái nhợt:da xanh tái nhợt.
+cơ bắp đau nhức:đau cơ.
+cơ bắp bị đau:đau cơ.
+mắc ói:buồn nôn.
+sốt có nhiệt độ cao:sốt cao.
+thân nhiệt cao:sốt cao.
+rát họng:đau họng.
+ngực đau:đau ngực.
+không muốn ăn:chán ăn.
+biến ăn:chán ăn.
+thở khó:thở gắng sức.
+ho có dịch nhầy:ho có đờm.
+ho ra đờm:ho có đờm.
+đầu dương vật sưng:Sưng bìu.
+phân lẫn máu:phân có máu.
+phân toàn nước ít:phân lỏng.
+đầy hơi:đầy bụng.
+chướng bụng:đầy bụng.
+bụng sôi ùng ục:sôi bụng.
+bụng đau dữ dội:đau quặn bụng.
+đau quặn ruột:đau quặn bụng.
+đau vai:đau cơ vai.
+vòng họng đau rát:đau rát vùng vòm họng.
+khàn cổ:khàn giọng.
+khó đi ngoài:táo bón.
+khó chịu ở dạ dày:đau dạ dày.
+đau bụng khi đói:đau tăng khi đói.
+đói hay đau bụng:đau tăng khi đói.
+nôn ra thức ăn có máu:nôn ra thức ăn lẫn máu.
+ngủ không ngon:khó ngủ.
+âu lo:lo lắng.
+tay trái tê:tê tay trái.
+tay trái bị tê:tê tay trái.
+tay trái:tê tay trái.
+đau ngực trái:đau vùng trước tim.
+tim đập nhanh:nhịp tim nhanh.
+miệng có vị đắng:đắng miệng.
+ngực hơi đau:đau ngực.
+tuyến nước bọt: tuyến nước bọt sưng to.
+
+
+

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="141dp"
+        android:layout_height="141dp"
+        android:layout_gravity="center"
+        android:background="@drawable/background_placeholder_avatar" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/background_placeholder" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/background_placeholder" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/background_placeholder" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/background_placeholder" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/background_placeholder" />
+</LinearLayout>

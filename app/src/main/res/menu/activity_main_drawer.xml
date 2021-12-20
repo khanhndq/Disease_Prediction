@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group
+        android:checkableBehavior="single"
+        android:id="@+id/menu_group_1">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_menu_home"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_account"
+            android:icon="@drawable/ic_menu_profile"
+            android:title="@string/menu_account" />
+        <item
+            android:id="@+id/nav_predictionListConfirm"
+            android:icon="@drawable/ic_menu_prediction_confirm"
+            android:title="@string/menu_predictionList_pending" />
+        <item
+            android:id="@+id/nav_predictionList"
+            android:icon="@drawable/ic_menu_prescript"
+            android:title="@string/menu_predictionList" />
+        <item
+            android:id="@+id/nav_consultationList"
+            android:icon="@drawable/ic_menu_consult"
+            android:title="@string/menu_consultationList" />
+    </group>
+
+    <group
+        android:checkableBehavior="single"
+        android:id="@+id/menu_group_2">
+        <!--        <item-->
+        <!--            android:id="@+id/nav_settings"-->
+        <!--            android:icon="@drawable/ic_menu_settings"-->
+        <!--            android:title="@string/menu_settings" />-->
+        <!-- <item
+             android:id="@+id/nav_about"
+             android:icon="@drawable/ic_menu_info"
+             android:title="@string/menu_about" />-->
+        <item
+            android:id="@+id/nav_out"
+            android:icon="@drawable/ic_menu_logout"
+            android:title="@string/menu_signout" />
+
+    </group>
+</menu>

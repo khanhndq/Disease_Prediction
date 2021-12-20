@@ -1,0 +1,439 @@
+@startuml
+
+title __OBJECT's Class Diagram__\n
+
+  namespace com.example.diseaseprediction {
+    namespace object {
+      class com.example.diseaseprediction.object.Account {
+          - accountId : String
+          - address : String
+          - dateCreate : Date
+          - dateUpdate : Date
+          - email : String
+          - gender : int
+          - image : String
+          - name : String
+          - phone : String
+          - status : int
+          - typeID : int
+          - typeLogin : int
+          + Account()
+          + Account()
+          + getAccountId()
+          + getAddress()
+          + getDateCreate()
+          + getDateUpdate()
+          + getEmail()
+          + getGender()
+          + getImage()
+          + getName()
+          + getPhone()
+          + getStatus()
+          + getTypeID()
+          + getTypeLogin()
+          + setAccountId()
+          + setAddress()
+          + setDateCreate()
+          + setDateUpdate()
+          + setEmail()
+          + setGender()
+          + setImage()
+          + setName()
+          + setPhone()
+          + setStatus()
+          + setTypeID()
+          + setTypeLogin()
+      }
+    }
+  }
+  
+
+  namespace com.example.diseaseprediction {
+    namespace object {
+      class com.example.diseaseprediction.object.Advise {
+          - adviseID : String
+          - dateCreate : Date
+          - dateUpdate : Date
+          - description : String
+          - status : int
+          + Advise()
+          + Advise()
+          + getAdviseID()
+          + getDateCreate()
+          + getDateUpdate()
+          + getDescription()
+          + getStatus()
+          + setAdviseID()
+          + setDateCreate()
+          + setDateUpdate()
+          + setDescription()
+          + setStatus()
+      }
+    }
+  }
+  
+
+  namespace com.example.diseaseprediction {
+    namespace object {
+      class com.example.diseaseprediction.object.Disease {
+          - dateCreate : Date
+          - dateUpdate : Date
+          - description : String
+          - diseaseID : String
+          - name : String
+          - specializationID : String
+          - status : int
+          + Disease()
+          + Disease()
+          + getDateCreate()
+          + getDateUpdate()
+          + getDescription()
+          + getDiseaseID()
+          + getName()
+          + getSpecializationID()
+          + getStatus()
+          + setDateCreate()
+          + setDateUpdate()
+          + setDescription()
+          + setDiseaseID()
+          + setName()
+          + setSpecializationID()
+          + setStatus()
+          + toString()
+      }
+    }
+  }
+  
+
+  namespace com.example.diseaseprediction {
+    namespace object {
+      class com.example.diseaseprediction.object.DiseaseAdvise {
+          - adviseID : String
+          - diseaseID : String
+          - status : int
+          + DiseaseAdvise()
+          + DiseaseAdvise()
+          + getAdviseID()
+          + getDiseaseID()
+          + getStatus()
+          + setAdviseID()
+          + setDiseaseID()
+          + setStatus()
+      }
+    }
+  }
+  
+
+  namespace com.example.diseaseprediction {
+    namespace object {
+      class com.example.diseaseprediction.object.DoctorInfo {
+          - accountID : String
+          - dateCreate : Date
+          - dateUpdate : Date
+          - experience : double
+          - shortDescription : String
+          - specializationID : String
+          - status : int
+          + DoctorInfo()
+          + DoctorInfo()
+          + getAccountID()
+          + getDateCreate()
+          + getDateUpdate()
+          + getExperience()
+          + getShortDescription()
+          + getSpecializationID()
+          + getStatus()
+          + setAccountID()
+          + setDateCreate()
+          + setDateUpdate()
+          + setExperience()
+          + setShortDescription()
+          + setSpecializationID()
+          + setStatus()
+      }
+    }
+  }
+  
+
+  namespace com.example.diseaseprediction {
+    namespace object {
+      class com.example.diseaseprediction.object.Medicine {
+          - content : String
+          - dateCreate : Date
+          - dateUpdate : Date
+          - description : String
+          - manufacturer : String
+          - medicineID : String
+          - name : String
+          - status : int
+          + Medicine()
+          + Medicine()
+          + getContent()
+          + getDateCreate()
+          + getDateUpdate()
+          + getDescription()
+          + getManufacturer()
+          + getMedicineID()
+          + getName()
+          + getStatus()
+          + setContent()
+          + setDateCreate()
+          + setDateUpdate()
+          + setDescription()
+          + setManufacturer()
+          + setMedicineID()
+          + setName()
+          + setStatus()
+      }
+    }
+  }
+  
+
+  namespace com.example.diseaseprediction {
+    namespace object {
+      class com.example.diseaseprediction.object.Message {
+          - dateSend : Date
+          - message : String
+          - messageID : String
+          - senderID : String
+          - sessionID : String
+          - status : int
+          + Message()
+          + Message()
+          + getDateSend()
+          + getMessage()
+          + getMessageID()
+          + getSenderID()
+          + getSessionID()
+          + getStatus()
+          + setDateSend()
+          + setMessage()
+          + setMessageID()
+          + setSenderID()
+          + setSessionID()
+          + setStatus()
+      }
+    }
+  }
+  
+
+  namespace com.example.diseaseprediction {
+    namespace object {
+      class com.example.diseaseprediction.object.Prediction {
+          {static} + CREATOR : Creator<Prediction>
+          - dateCreate : Date
+          - dateUpdate : Date
+          - diseaseID : String
+          - doctorID : String
+          - doctorSessionID : String
+          - hiddenSpecializationID : String
+          - notes : String
+          - patientID : String
+          - predictionID : String
+          - sessionID : String
+          - status : int
+          + Prediction()
+          + Prediction()
+          + describeContents()
+          + getDateCreate()
+          + getDateUpdate()
+          + getDiseaseID()
+          + getDoctorID()
+          + getDoctorSessionID()
+          + getHiddenSpecializationID()
+          + getNotes()
+          + getPatientID()
+          + getPredictionID()
+          + getSessionID()
+          + getStatus()
+          + setDateCreate()
+          + setDateUpdate()
+          + setDiseaseID()
+          + setDoctorID()
+          + setDoctorSessionID()
+          + setHiddenSpecializationID()
+          + setNotes()
+          + setPatientID()
+          + setPredictionID()
+          + setSessionID()
+          + setStatus()
+          + writeToParcel()
+          # Prediction()
+      }
+    }
+  }
+  
+
+  namespace com.example.diseaseprediction {
+    namespace object {
+      class com.example.diseaseprediction.object.PredictionMedicine {
+          - dosage : String
+          - medicineID : String
+          - predictionID : String
+          - status : int
+          + PredictionMedicine()
+          + getDosage()
+          + getMedicineID()
+          + getPredictionID()
+          + getStatus()
+          + setDosage()
+          + setMedicineID()
+          + setPredictionID()
+          + setStatus()
+      }
+    }
+  }
+  
+
+  namespace com.example.diseaseprediction {
+    namespace object {
+      class com.example.diseaseprediction.object.PredictionSymptom {
+          - predictionID : String
+          - status : int
+          - symptomID : String
+          + PredictionSymptom()
+          + getPredictionID()
+          + getStatus()
+          + getSymptomID()
+          + setPredictionID()
+          + setStatus()
+          + setSymptomID()
+      }
+    }
+  }
+  
+
+  namespace com.example.diseaseprediction {
+    namespace object {
+      class com.example.diseaseprediction.object.RecommendSymptom {
+          - messageID : String
+          - status : int
+          - symptomsID : String
+          + RecommendSymptom()
+          + RecommendSymptom()
+          + getMessageID()
+          + getStatus()
+          + getSymptomsID()
+          + setMessageID()
+          + setStatus()
+          + setSymptomsID()
+      }
+    }
+  }
+  
+
+  namespace com.example.diseaseprediction {
+    namespace object {
+      class com.example.diseaseprediction.object.Session {
+          - accountIDOne : String
+          - accountIDTwo : String
+          - dateCreate : Date
+          - dateUpdate : Date
+          - sessionID : String
+          - status : int
+          + Session()
+          + Session()
+          + Session()
+          + getAccountIDOne()
+          + getAccountIDTwo()
+          + getDateCreate()
+          + getDateUpdate()
+          + getSessionID()
+          + getStatus()
+          + setAccOneAndAccTwo()
+          + setAccountIDOne()
+          + setAccountIDTwo()
+          + setDateCreate()
+          + setDateUpdate()
+          + setSessionID()
+          + setStatus()
+      }
+    }
+  }
+  
+
+  namespace com.example.diseaseprediction {
+    namespace object {
+      class com.example.diseaseprediction.object.Specialization {
+          - dateCreate : Date
+          - dateUpdate : Date
+          - name : String
+          - specializationID : String
+          - status : int
+          + Specialization()
+          + Specialization()
+          + getDateCreate()
+          + getDateUpdate()
+          + getName()
+          + getSpecializationID()
+          + getStatus()
+          + setDateCreate()
+          + setDateUpdate()
+          + setName()
+          + setSpecializationID()
+          + setStatus()
+          + toString()
+      }
+    }
+  }
+  
+
+  namespace com.example.diseaseprediction {
+    namespace object {
+      class com.example.diseaseprediction.object.Symptom {
+          - dateCreate : Date
+          - dateUpdate : Date
+          - description : String
+          - name : String
+          - status : int
+          - symptomID : String
+          + Symptom()
+          + Symptom()
+          + getDateCreate()
+          + getDateUpdate()
+          + getDescription()
+          + getName()
+          + getStatus()
+          + getSymptomID()
+          + setDateCreate()
+          + setDateUpdate()
+          + setDescription()
+          + setName()
+          + setStatus()
+          + setSymptomID()
+          + toString()
+      }
+    }
+  }
+  
+
+  namespace com.example.diseaseprediction {
+    namespace object {
+      class com.example.diseaseprediction.object.SymptomMedicine {
+          - medicineID : String
+          - status : int
+          - symptomID : String
+          + SymptomMedicine()
+          + SymptomMedicine()
+          + getMedicineID()
+          + getStatus()
+          + getSymptomID()
+          + setMedicineID()
+          + setStatus()
+          + setSymptomID()
+      }
+    }
+  }
+  
+
+  com.example.diseaseprediction.object.Prediction .up.|> android.os.Parcelable
+
+
+right footer
+
+
+PlantUML diagram generated by SketchIt! (https://bitbucket.org/pmesmeur/sketch.it)
+For more information about this tool, please contact philippe.mesmeur@gmail.com
+endfooter
+
+@enduml

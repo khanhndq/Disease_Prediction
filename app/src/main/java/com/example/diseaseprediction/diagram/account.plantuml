@@ -1,0 +1,45 @@
+@startuml
+
+  namespace com.example.diseaseprediction {
+    namespace ui.account {
+    skinparam classAttributeIconSize 0
+      class com.example.diseaseprediction.ui.account.AccountFragment {
+          {static} - TAG : String
+          - account_doctor_spinner_specialization : AutoCompleteTextView
+          - account_doctor_txt_description : TextView
+          - account_doctor_txt_experience : TextView
+          - account_doctor_txt_specialization : TextView
+          - account_img_avatar : CircleImageView
+          - account_layout_doctor : LinearLayout
+          - account_layout_normal : LinearLayout
+          - account_shimmer_avatar : ShimmerFrameLayout
+          - account_spinner_gender : AutoCompleteTextView
+          - account_txt_address : TextView
+          - account_txt_email : TextView
+          - account_txt_gender : TextView
+          - account_txt_name : TextView
+          - account_txt_phone : TextView
+          - accout_btn_edit : Button
+          - context : Context
+          - fUser : FirebaseUser
+          - mRef : DatabaseReference
+          - specialization : ArrayList<Specialization>
+          - specializationAdapter : ArrayAdapter<Specialization>
+          + AccountFragment()
+          + onCreate()
+          + onCreateView()
+          + onViewCreated()
+          - findViews()
+          - getDataForUI()
+          - loadDataOfDoctor()
+      }
+    }
+  }
+  
+
+  com.example.diseaseprediction.ui.account.AccountFragment -up-|> androidx.fragment.app.Fragment
+  com.example.diseaseprediction.ui.account.AccountFragment o-- com.example.diseaseprediction.object.Account : mAccount
+  com.example.diseaseprediction.ui.account.AccountFragment o-- com.example.diseaseprediction.object.DoctorInfo : mDoctor
+  com.example.diseaseprediction.ui.account.AccountFragment o-- com.example.diseaseprediction.object.Specialization : mSpecialization
+
+@enduml

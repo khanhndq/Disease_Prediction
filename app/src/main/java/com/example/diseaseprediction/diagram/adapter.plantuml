@@ -1,0 +1,159 @@
+@startuml
+
+title __ADAPTER's Class Diagram__\n
+
+  namespace com.example.diseaseprediction {
+    namespace adapter {
+      class com.example.diseaseprediction.adapter.AlertAdapter {
+          + getItemCount()
+          + onBindViewHolder()
+          + onCreateViewHolder()
+      }
+    }
+  }
+  
+
+  namespace com.example.diseaseprediction {
+    namespace adapter {
+      class com.example.diseaseprediction.adapter.AlertAdapter.ViewHolder {
+          + ViewHolder()
+      }
+    }
+  }
+  
+
+  namespace com.example.diseaseprediction {
+    namespace adapter {
+      class com.example.diseaseprediction.adapter.ChatAdapter {
+          {static} + MSG_TYPE_LEFT : int
+          {static} + MSG_TYPE_LEFT_BOX : int
+          {static} + MSG_TYPE_RIGHT : int
+          {static} - LOG_TAG : String
+          - fUser : FirebaseUser
+          - mContext : Context
+          - mMessage : List<Message>
+          - mRef : DatabaseReference
+          - mRef2 : DatabaseReference
+          - mSymptom : List<Symptom>
+          - symptomAdapter : ArrayAdapter<Symptom>
+          + ChatAdapter()
+          + ChatAdapter()
+          + getItemCount()
+          + getItemViewType()
+          + onBindViewHolder()
+          + onCreateViewHolder()
+          + setPredictButtonListener()
+      }
+    }
+  }
+  
+
+  namespace com.example.diseaseprediction {
+    namespace adapter {
+      class com.example.diseaseprediction.adapter.ChatAdapter.ViewHolder {
+          + item_chat_box_button_predict : Button
+          + item_chat_layout_show_message : LinearLayout
+          + item_chat_show_message : TextView
+          + item_chat_time : TextView
+          + ViewHolder()
+          + ViewHolder()
+      }
+    }
+  }
+  
+
+  namespace com.example.diseaseprediction {
+    namespace adapter {
+      class com.example.diseaseprediction.adapter.ConsultationAdapter {
+          {static} - LOG_TAG : String
+          - fUser : FirebaseUser
+          - latestMessage : String
+          - latestTime : String
+          - mConsultationList : List<Session>
+          - mContext : Context
+          - mRef : DatabaseReference
+          - sdf : SimpleDateFormat
+          + ConsultationAdapter()
+          + getItemCount()
+          + getLatestMessageAndTime()
+          + getUserName()
+          + onBindViewHolder()
+          + onCreateViewHolder()
+      }
+    }
+  }
+  
+
+  namespace com.example.diseaseprediction {
+    namespace adapter {
+      class com.example.diseaseprediction.adapter.ConsultationAdapter.ViewHolder {
+          + item_consultation_img_main : CircleImageView
+          + item_consultation_txt_message : TextView
+          + item_consultation_txt_name : TextView
+          + item_consultation_txt_time : TextView
+          + ViewHolder()
+      }
+    }
+  }
+  
+
+  namespace com.example.diseaseprediction {
+    namespace adapter {
+      class com.example.diseaseprediction.adapter.PredictionAdapter {
+          {static} - LOG_TAG : String
+          - fUser : FirebaseUser
+          - goToScreen : int
+          - indexList : ArrayList<Integer>
+          - mContext : Context
+          - mRef : DatabaseReference
+          - predictionsList : List<Prediction>
+          - sdf : SimpleDateFormat
+          + PredictionAdapter()
+          + getDataToUI()
+          + getItemCount()
+          + onBindViewHolder()
+          + onCreateViewHolder()
+          - findIndex()
+      }
+    }
+  }
+  
+
+  namespace com.example.diseaseprediction {
+    namespace adapter {
+      class com.example.diseaseprediction.adapter.PredictionAdapter.ViewHolder {
+          + item_prediction_img_main : LinearLayout
+          + item_prediction_txt_disease : TextView
+          + item_prediction_txt_month_day : TextView
+          + item_prediction_txt_status : TextView
+          + prediction_item_divider : View
+          + ViewHolder()
+      }
+    }
+  }
+  
+
+  com.example.diseaseprediction.adapter.AlertAdapter -up-|> androidx.recyclerview.widget.RecyclerView.Adapter
+  com.example.diseaseprediction.adapter.AlertAdapter +-down- com.example.diseaseprediction.adapter.AlertAdapter.ViewHolder
+  com.example.diseaseprediction.adapter.AlertAdapter.ViewHolder -up-|> androidx.recyclerview.widget.RecyclerView.ViewHolder
+  com.example.diseaseprediction.adapter.ChatAdapter -up-|> androidx.recyclerview.widget.RecyclerView.Adapter
+  com.example.diseaseprediction.adapter.ChatAdapter o-- com.example.diseaseprediction.listener.MyClickListener : listener
+  com.example.diseaseprediction.adapter.ChatAdapter +-down- com.example.diseaseprediction.adapter.ChatAdapter.ViewHolder
+  com.example.diseaseprediction.adapter.ChatAdapter.ViewHolder -up-|> androidx.recyclerview.widget.RecyclerView.ViewHolder
+  com.example.diseaseprediction.adapter.ChatAdapter.ViewHolder o-- com.example.diseaseprediction.listener.MyClickListener : myClickListener
+  com.example.diseaseprediction.adapter.ConsultationAdapter -up-|> androidx.recyclerview.widget.RecyclerView.Adapter
+  com.example.diseaseprediction.adapter.ConsultationAdapter +-down- com.example.diseaseprediction.adapter.ConsultationAdapter.ViewHolder
+  com.example.diseaseprediction.adapter.ConsultationAdapter.ViewHolder -up-|> androidx.recyclerview.widget.RecyclerView.ViewHolder
+  com.example.diseaseprediction.adapter.PredictionAdapter -up-|> androidx.recyclerview.widget.RecyclerView.Adapter
+  com.example.diseaseprediction.adapter.PredictionAdapter +-down- com.example.diseaseprediction.adapter.PredictionAdapter.ViewHolder
+  com.example.diseaseprediction.adapter.PredictionAdapter.ViewHolder -up-|> androidx.recyclerview.widget.RecyclerView.ViewHolder
+
+
+right footer
+
+
+PlantUML diagram generated by SketchIt! (https://bitbucket.org/pmesmeur/sketch.it)
+For more information about this tool, please contact philippe.mesmeur@gmail.com
+endfooter
+
+@enduml

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/login_nav"
+    app:startDestination="@id/loginStartedFragment">
+
+    <fragment
+        android:id="@+id/loginStartedFragment"
+        android:name="com.example.diseaseprediction.ui.login.LoginStartedFragment"
+        android:label="fragment_login_started"
+        tools:layout="@layout/fragment_login_started" >
+        <action
+            android:id="@+id/action_loginStartedFragment_to_loginFragment"
+            app:destination="@id/loginFragment"
+            app:enterAnim="@anim/fragment_open_enter" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.diseaseprediction.ui.login.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" />
+</navigation>

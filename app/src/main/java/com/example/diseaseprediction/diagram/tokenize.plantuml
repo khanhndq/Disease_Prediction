@@ -1,0 +1,192 @@
+@startuml
+
+title __TOKENIZE's Class Diagram__\n
+
+  namespace com.example.diseaseprediction {
+    namespace tokenize {
+      class com.example.diseaseprediction.tokenize.DataPreprocessor {
+          + DataPreprocessor()
+          + getCorpusInitialSegmentation()
+          + getStringInitialSegmentation()
+          {static} + main()
+      }
+    }
+  }
+  
+
+  namespace com.example.diseaseprediction {
+    namespace tokenize {
+      class com.example.diseaseprediction.tokenize.FWObject {
+          + context : String[]
+          + FWObject()
+      }
+    }
+  }
+  
+
+  namespace com.example.diseaseprediction {
+    namespace tokenize {
+      class com.example.diseaseprediction.tokenize.Node {
+          ~ conclusion : String
+          ~ depth : int
+          + Node()
+          + countNodes()
+          + satisfy()
+          + setExceptNode()
+          + setFatherNode()
+          + setIfnotNode()
+      }
+    }
+  }
+  
+
+  namespace com.example.diseaseprediction {
+    namespace tokenize {
+      class com.example.diseaseprediction.tokenize.RDRsegmenter {
+          - fis : InputStream
+          - ip : InputStream
+          + RDRsegmenter()
+          + RDRsegmenter()
+          + getInitialSegmentation()
+          + segmentDirectory()
+          + segmentRawCorpus()
+          + segmentRawString()
+          + segmentTokenizedCorpus()
+          + segmentTokenizedString()
+          - constructTreeFromRulesFile()
+          - findFiredNode()
+      }
+    }
+  }
+  
+
+  namespace com.example.diseaseprediction {
+    namespace tokenize {
+      class com.example.diseaseprediction.tokenize.Regex {
+          {static} + ALLCAP : String
+          {static} + DATE : String
+          {static} + ELLIPSIS : String
+          {static} + EMAIL : String
+          {static} + EOS_PUNCTUATION : String
+          {static} + FULL_DATE : String
+          {static} + MONEY : String
+          {static} + MONTH : String
+          {static} + NUMBER : String
+          {static} + NUMBERS_EXPRESSION : String
+          {static} + PHONE_NUMBER : String
+          {static} + PUNCTUATION : String
+          {static} + SHORT_NAME : String
+          {static} + SPECIAL_CHAR : String
+          {static} + TIME : String
+          {static} + URL : String
+          {static} - regexIndex : List<String>
+          {static} - regexes : List<String>
+          {static} + getRegexIndex()
+          {static} + getRegexList()
+      }
+    }
+  }
+  
+
+  namespace com.example.diseaseprediction {
+    namespace tokenize {
+      interface com.example.diseaseprediction.tokenize.StringConst {
+          {static} + BOS : String
+          {static} + COLON : String
+          {static} + COMMA : String
+          {static} + EOS : String
+          {static} + SPACE : String
+          {static} + STOP : String
+          {static} + UNDERSCORE : String
+      }
+    }
+  }
+  
+
+  namespace com.example.diseaseprediction {
+    namespace tokenize {
+      class com.example.diseaseprediction.tokenize.StringUtils {
+          {static} + VN_abbreviation : HashSet<String>
+          {static} + VN_exception : HashSet<String>
+          {static} + char2Hex()
+          {static} + hasPunctuation()
+          {static} + hex2Char()
+          {static} + isBrace()
+          {static} + testFoundByRegex()
+      }
+    }
+  }
+  
+
+  namespace com.example.diseaseprediction {
+    namespace tokenize {
+      class com.example.diseaseprediction.tokenize.Tokenizer {
+          {static} + joinSentence()
+          {static} + joinSentences()
+          {static} + tokenize()
+          {static} - recursive()
+      }
+    }
+  }
+  
+
+  namespace com.example.diseaseprediction {
+    namespace tokenize {
+      class com.example.diseaseprediction.tokenize.Utils {
+          {static} + NORMALIZER : Map<String, String>
+          {static} + NORMALIZER_KEYS : Set<String>
+          {static} + getConcreteValue()
+          {static} + getCondition()
+          {static} + getObject()
+      }
+    }
+  }
+  
+
+  namespace com.example.diseaseprediction {
+    namespace tokenize {
+      class com.example.diseaseprediction.tokenize.Vocabulary {
+          {static} + COUNTRY_L_NAME : Set<String>
+          {static} + COUNTRY_S_NAME : Set<String>
+          {static} + VN_DICT : Set<String>
+          {static} + VN_FAMILY_NAMES : Set<String>
+          {static} + VN_FIRST_SENT_WORDS : Set<String>
+          {static} + VN_LOCATIONS : Set<String>
+          {static} + VN_MIDDLE_NAMES : Set<String>
+          {static} + WORLD_COMPANY : Set<String>
+          {static} - ip : InputStream
+          + Vocabulary()
+          + test()
+      }
+    }
+  }
+  
+
+  namespace com.example.diseaseprediction {
+    namespace tokenize {
+      class com.example.diseaseprediction.tokenize.WordTag {
+          + form : String
+          + tag : String
+          + word : String
+          + WordTag()
+      }
+    }
+  }
+  
+
+  com.example.diseaseprediction.tokenize.DataPreprocessor o-- com.example.diseaseprediction.tokenize.RDRsegmenter : initialSegmenter
+  com.example.diseaseprediction.tokenize.Node o-- com.example.diseaseprediction.tokenize.FWObject : condition
+  com.example.diseaseprediction.tokenize.Node o-- com.example.diseaseprediction.tokenize.Node : exceptNode
+  com.example.diseaseprediction.tokenize.Node o-- com.example.diseaseprediction.tokenize.Node : fatherNode
+  com.example.diseaseprediction.tokenize.Node o-- com.example.diseaseprediction.tokenize.Node : ifnotNode
+  com.example.diseaseprediction.tokenize.RDRsegmenter o-- com.example.diseaseprediction.tokenize.Node : root
+
+
+right footer
+
+
+PlantUML diagram generated by SketchIt! (https://bitbucket.org/pmesmeur/sketch.it)
+For more information about this tool, please contact philippe.mesmeur@gmail.com
+endfooter
+
+@enduml

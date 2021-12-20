@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/padding"
+    android:paddingRight="@dimen/padding"
+    tools:context=".ui.prediction.PredictionListFragment">
+
+    <TextView
+        android:id="@+id/prediction_list_txt_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/prediction_list_txt_title"
+        android:textAlignment="center"
+        android:visibility="gone" />
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/prediction_shimmer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include layout="@layout/placeholder_item_prediction" />
+
+            <include layout="@layout/placeholder_item_prediction" />
+
+            <include layout="@layout/placeholder_item_prediction" />
+
+            <include layout="@layout/placeholder_item_prediction" />
+
+            <include layout="@layout/placeholder_item_prediction" />
+
+            <include layout="@layout/placeholder_item_prediction" />
+
+            <include layout="@layout/placeholder_item_prediction" />
+
+            <include layout="@layout/placeholder_item_prediction" />
+
+            <include layout="@layout/placeholder_item_prediction" />
+
+            <include layout="@layout/placeholder_item_prediction" />
+        </LinearLayout>
+    </com.facebook.shimmer.ShimmerFrameLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/prediction_list_recycler_view_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:overScrollMode="never"
+        android:paddingBottom="12dp"
+        android:visibility="gone"
+        tools:listitem="@layout/item_prediction" />
+</LinearLayout>

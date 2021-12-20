@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/margin_top">
+
+    <LinearLayout
+        android:id="@+id/item_chat_layout_show_message"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_chat_right"
+        android:orientation="vertical"
+        android:paddingStart="16dp"
+        android:paddingTop="@dimen/margin_top"
+        android:paddingEnd="16dp"
+        android:paddingBottom="@dimen/margin_top"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_max="wrap"
+        app:layout_constraintWidth_percent="0.9">
+
+        <TextView
+            android:id="@+id/item_chat_show_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            tools:text="sample text" />
+
+
+        <!--        <de.hdodenhof.circleimageview.CircleImageView-->
+        <!--            android:id="@+id/item_chat_img"-->
+        <!--            android:layout_width="60dp"-->
+        <!--            android:layout_height="60dp"-->
+        <!--            android:layout_marginTop="@dimen/margin_top"-->
+        <!--            android:layout_marginRight="@dimen/margin_top"-->
+        <!--            android:foregroundGravity="right"-->
+        <!--            android:src="@drawable/background_avatar" />-->
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/item_chat_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_top"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/item_chat_layout_show_message" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.diseaseprediction.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_account"
+        android:name="com.example.diseaseprediction.ui.account.AccountFragment"
+        android:label="@string/menu_account"
+        tools:layout="@layout/fragment_account" />
+
+    <fragment
+        android:id="@+id/nav_predictionList"
+        android:name="com.example.diseaseprediction.ui.prediction.PredictionListFragment"
+        android:label="@string/menu_predictionList"
+        tools:layout="@layout/fragment_prediction_list" />
+
+    <fragment
+        android:id="@+id/nav_predictionListConfirm"
+        android:name="com.example.diseaseprediction.ui.predictionListConfirm.PredictionListPending"
+        android:label="@string/menu_predictionList_pending"
+        tools:layout="@layout/fragment_prediction_list_confirm" />
+
+    <fragment
+        android:id="@+id/nav_consultationList"
+        android:name="com.example.diseaseprediction.ui.consultation.ConsultationListFragment"
+        android:label="@string/menu_consultationList"
+        tools:layout="@layout/fragment_consultation_list" />
+
+    <fragment
+        android:id="@+id/nav_settings"
+        android:name="com.example.diseaseprediction.ui.settings.SettingsFragment"
+        android:label="@string/menu_settings"
+        tools:layout="@layout/fragment_settings" />
+
+</navigation>

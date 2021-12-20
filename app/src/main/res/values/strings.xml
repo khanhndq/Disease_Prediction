@@ -1,0 +1,282 @@
+<resources>
+
+    <!--    Dialog-->
+    <string name="dialog_button_yes">Yes</string>
+    <string name="dialog_button_cancel">Cancel</string>
+    <string name="dialog_button_ok">OK</string>
+
+    <string name="app_name">Pemeprap</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_account">Profile</string>
+    <string name="menu_predictionList">Prediction</string>
+    <string name="menu_predictionList_pending">Pending prediction</string>
+    <string name="menu_consultationList">Consultation</string>
+    <string name="menu_settings">Settings</string>
+    <string name="menu_about">About</string>
+    <string name="menu_signout">Sign Out</string>
+    <string name="menu_alert">Notification</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+
+    <string name="about_txt_slogan">Slogan</string>
+    <string name="about_txt_company">NEON COMPANY</string>
+    <string name="account_txt_title_name">Name</string>
+    <string name="account_txt_title_name_format">&lt;b>Name:&lt;/b>     %1$s</string>
+    <string name="account_txt_name">TextView</string>
+    <string name="account_txt_title_address">Address</string>
+    <string name="account_txt_title_address_format">&lt;b>Address:&lt;/b>   %1$s</string>
+    <string name="account_txt_address">TextView</string>
+    <string name="account_txt_title_gender">Gender</string>
+    <string name="account_txt_title_gender_format">&lt;b>Gender:&lt;/b>  %1$s</string>
+    <string name="account_txt_gender">TextView</string>
+    <string name="account_txt_title_phone">Phone number</string>
+    <string name="account_txt_title_phone_format">&lt;b>Phone:&lt;/b>  %1$s</string>
+    <string name="account_txt_phone">TextView</string>
+    <string name="account_txt_title_email">Email</string>
+    <string name="account_txt_title_email_format">&lt;b>Email:&lt;/b>  %1$s</string>
+    <string name="account_txt_email">TextView</string>
+    <string name="account_btn_edit">Update profile</string>
+    <string name="account_btn_edit_done">Save</string>
+
+    <string name="consultation_list_txt_title">No consultation</string>
+
+    <string name="home_txt_title">What is your disease ?</string>
+    <string name="home_txt_prediction_title">Recent predictions</string>
+    <string name="home_txt_prediction_see_more">See more</string>
+    <string name="home_txt_consultation_title">Recent consultations</string>
+    <string name="home_txt_consultation_see_more">See more</string>
+    <string name="home_search_view">Enter your symptoms</string>
+
+    <string name="login_txt_title">Log in</string>
+    <string name="login_txt_title_doctor">Log in</string>
+    <string name="login_eTxt_user">Phone number</string>
+    <string name="login_ask_acc">You don\'t have an account ?</string>
+    <string name="login_sign_up">Sign up</string>
+    <string name="login_txt_connect_other">Or log in using</string>
+    <string name="login_btn_login">Google</string>
+    <string name="login_started_txt_slogan">Disease Prediction</string>
+    <string name="login_started_btn_next">Let\'s go</string>
+    <string name="login_txt_by_type">Login as user</string>
+    <string name="login_txt_by_type_doctor">Log in as a Doctor</string>
+    <string name="login_phone_login">Log in with phone number</string>
+
+    <string name="prediction_txt_acc_name">TextView</string>
+    <string name="prediction_txt_acc_sex">TextView</string>
+    <string name="prediction_txt_acc_phone">TextView</string>
+    <string name="prediction_txt_disease_title">Disease</string>
+    <string name="prediction_txt_disease_result">TextView</string>
+    <string name="prediction_txt_disease_description_title">Description</string>
+    <string name="prediction_txt_disease_description_result">TextView</string>
+    <string name="prediction_txt_symptom_title">Symptom</string>
+    <string name="prediction_txt_symptom_result">TextView</string>
+    <string name="prediction_txt_medicine_title">Medicine</string>
+    <string name="prediction_txt_medicine_result">TextView</string>
+    <string name="prediction_txt_advice_title">Advice</string>
+    <string name="prediction_txt_advice_result">TextView</string>
+    <string name="prediction_list_txt_title">No prediction</string>
+    <string name="prediction_txt_status_correct">Doctor confirmed!</string>
+    <string name="prediction_txt_status_incorrect">Doctor confirmed and prediction updated</string>
+    <string name="prediction_txt_status_pending">Waiting for doctor confirmation… </string>
+    <string name="prediction_txt_status">Status</string>
+    <string name="prediction_title_result">Prediction</string>
+    <string name="prediction_btn_contact_doctor">Contact a doctor</string>
+    <string name="prediction_btn_back">Back to previous</string>
+
+    <string name="settings_txt_turn_notification">Notification</string>
+    <string name="settings_txt_select_language">Language</string>
+    <string name="settings_txt_title_version">Version</string>
+    <string name="settings_txt_version">1.0.0</string>
+
+    <string name="item_alert_txt_title">Notification</string>
+    <string name="item_alert_txt_content">Message</string>
+    <string name="item_alert_txt_time">09:23</string>
+    <string name="item_consultation_txt_name">Name</string>
+    <string name="item_consultation_txt_message">Message</string>
+    <string name="item_consultation_txt_time">09:23</string>
+    <string name="item_prediction_txt_month">Th8</string>
+    <string name="item_prediction_txt_day">12</string>
+    <string name="item_prediction_txt_disease">Your disease</string>
+    <string name="item_prediction_txt_status">status: Successful</string>
+    <string name="nav_header_txt_acc_name">LOREM IPSUM SCARAMOUCHE SCRARAMOUCHE GALILEO PACCIORETTY LOREM IPSUM SCARAMOUCHE SCRARAMOUCHE GALILEO PACCIORETTY</string>
+    <string name="nav_header_txt_acc_phone">+84 093 154 6591</string>
+    <string name="alert_list_txt_title">Your notification</string>
+
+    <string name="default_empty_name">Please enter your name</string>
+    <string name="default_empty_gender">Please select your gender</string>
+    <string name="default_choose_gender">None</string>
+    <string name="default_gender_male">Male</string>
+    <string name="default_gender_female">Female</string>
+    <string name="default_gender_other">Other</string>
+    <string name="default_empty_email">Please enter your email</string>
+    <string name="default_empty_phone">Please enter your phone</string>
+    <string name="default_empty_address">Please enter your address</string>
+    <string name="default_empty_code">Please enter your code</string>
+    <string name="default_email_regex">Please enter the correct email format: abc@def.xyz</string>
+    <string name="default_empty_experience">Please enter your year of experience</string>
+    <string name="default_empty_description">Please enter some description about you</string>
+    <string name="default_empty_specialization">Please select specialization</string>
+    <string name="default_instruction">No instructions yet</string>
+    <string name="default_empty_medicine">Please add medicine before confirming</string>
+    <string name="default_other_disease_confirm">Please click incorrect to re-diagnose the disease</string>
+    <string name="default_medicine_empty_doctor">Please prescribe medication if necessary</string>
+    <string name="default_empty_medicine_add">Please click incorrect to add medicine</string>
+    <string name="default_empty_instruction">Please click incorrect to add instruction</string>
+
+    <string name="dialog_confirm_change_img">Press Yes to upload new avatar</string>
+    <string name="dialog_confirm_change_account">Are you sure you want to save?</string>
+    <string name="dialog_confirm_change_account_yes">Yes</string>
+    <string name="dialog_confirm_change_account_no">No</string>
+
+
+    <string name="chat_chatbot_hello">Hello! %1$s is here to help!</string>
+    <string name="chat_doctor_hello">Hello! How can I help you?</string>
+    <string name="chat_chatbot_ask"> Please let %1$s know what your symptoms are so that %2$s can find out what disease you are having</string>
+    <string name="chat_chatbot_continue_symptom">Do you have any other symptoms?</string>
+    <string name="chat_speech_support_device">Your Device Don\'t Support Speech Input</string>
+    <string name="chat_chatbot_symptom">Your symptoms: &#160;</string>
+    <string name="chat_chatbot_disease_list">You may have diseases such as:\n </string>
+    <string name="chat_chatbot_disease_list_item">%1$s (%2$.0f%%)</string>
+    <string name="chat_chatbot_disease">So we make predictions is: %1$s</string>
+    <string name="chat_dialog_end_session_prediction">The prediction will be ended when you exit the chat. Do you want to continue?</string>
+    <string name="chat_session_ended">Session ended</string>
+    <string name="chat_not_enough_symptom">Our system can\'t detect what your symptoms are. Therefore the system is not able to make a prediction.</string>
+    <string name="chat_not_enough_data">But we\'ve created a temporary prediction for you and sent it to our doctors to find out what your disease is </string>
+    <string name="chat_in_process_prediction">Please wait...</string>
+    <string name="chatbox_button_predict">Give prediction</string>
+
+    <string name="chat_menu_patient_view_info">View doctor\'s information</string>
+    <string name="chat_menu_doctor_view_info">View patient\'s information</string>
+    <string name="chat_menu_end_session">End session</string>
+    <string name="chat_dialog_prediction_title">Prediction created</string>
+    <string name="chat_dialog_prediction_msg">Your prediction has been created and will be confirmed by our doctors soon. Do you want to check the status of your prediction?</string>
+
+
+    <string name="exception_chat_load_user">Can\'t load user</string>
+
+    <string name="prediction_adapter_waiting_confirm">Waiting for doctor\'s confirmation</string>
+    <string name="prediction_adapter_confirmed_correct">Doctor confirmed</string>
+    <string name="prediction_adapter_confirmed_incorrect">Doctor confirmed! Disease changed!</string>
+    <string name="prediction_txt_contact_doctor">Do you need advice? </string>
+
+    <string name="home_doctor_txt_title">Hello doctor!</string>
+    <string name="home_doctor_txt_prediction_title">Patient\'s disease</string>
+    <string name="home_doctor_txt_consultation_title">Patient\'s consultation</string>
+    <string name="home_doctor_all_prediction_txt_title">Pending Predictions</string>
+
+    <string name="account_info_btn_done">Done</string>
+    <string name="account_info_txt_title">Personal Information</string>
+    <string name="account_info_doctor_experience">Experience (Year)</string>
+    <string name="account_info_doctor_experience_format">&lt;b>Experience:&lt;/b>   %1$s year(s)</string>
+    <string name="account_info_doctor_specialization">Specialization</string>
+    <string name="account_info_doctor_specialization_format">&lt;b>Specialization:&lt;/b>  %1$s</string>
+    <string name="account_info_doctor_description">Short description</string>
+    <string name="account_info_doctor_description_format">&lt;b>Short description: &lt;/b>  %1$s</string>
+    <string name="account_info_doctor_txt_title">Doctor Information</string>
+    <string name="account_info_txt_subtitle">Please fill in your personal information</string>
+
+    <string name="code_verify_txt_title">Enter verification code</string>
+    <string name="code_verify_edit_txt_code">Verification code</string>
+    <string name="code_verify_re_send">Resend verification code</string>
+    <string name="code_verify_resend_title">Verification code Sent!</string>
+    <string name="code_verify_resend_content">The verification code had been sent</string>
+    <string name="code_verify_error_code_invalid">Verification code is incorrect!</string>
+    <string name="code_verify_exception_phone_invalid">Phone number format incorrect! Please return and re-enter your phone number</string>
+    <string name="code_verify_exception_device_blocked">Your device has been blocked due to too much log in attempt! \nPlease contact the developer for assistance!</string>
+    <string name="code_verify_exception_verification_failed_unknown">Error in verification processing! \nPlease click \'Resend\' button or contact the developer for assistance!</string>
+    <string name="code_verify_txt_note">Please check for the verification code in your Messaging app</string>
+
+    <string name="error_txt">Error!</string>
+    <string name="error_field_empty">Field can\'t be empty!</string>
+    <string name="error_field_length_excess">Please do not enter more than %1$d characters</string>
+    <string name="error_unknown_relogin">An error happened. Please log in again</string>
+    <string name="error_unknown_contactDev">An error happened. Please contact the developer for assistance!</string>
+    <string name="error_login_phone_too_long">Phone number format is incorrect!</string>
+
+    <string name="upload_img_waiting">Uploading…</string>
+    <string name="upload_img_done">Uploaded</string>
+    <string name="item_chat_checkbox_done">Done</string>
+
+    <string name="prediction_confirm_btn_incorrect">Not correct</string>
+    <string name="prediction_confirm_btn_correct">Correct</string>
+    <string name="prediction_confirm_btn_confirm">Confirm</string>
+    <string name="prediction_confirm_disease_input_other_disease">Disease name</string>
+    <string name="prediction_confirm_disease_select">Select Disease</string>
+    <string name="prediction_confirm_txt_disease_title">Disease Prediction</string>
+    <string name="prediction_confirm_txt_disease_description_title">Patient\'s Description</string>
+    <string name="prediction_confirm_title">Prediction Confirm Request</string>
+    <string name="prediction_confirm_dialog_incorrect">Are you sure the prediction is not correct?</string>
+    <string name="prediction_confirm_dialog_correct">Are you sure the prediction is correct?</string>
+    <string name="prediction_confirm_txt_disease_prediction_title">Please select correct disease for this prediction</string>
+    <string name="prediction_confirm_dialog_thankyou">Thank you for your confirmation!</string>
+    <string name="prediction_confirm_dialog_prediction_status_invalid">Sorry! This prediction already confirm by another doctor\nYou will be redirect to Home screen</string>
+    <string name="prediction_confirm_txt_medicine">Medicine</string>
+    <string name="prediction_confirm_txt_medicine_name">Medicine name</string>
+    <string name="prediction_confirm_txt_medicine_dosage">Total</string>
+    <string name="prediction_confirm_txt_medicine_instruction">Instructions for drug use</string>
+    <string name="prediction_txt_today">Today</string>
+    <string name="prediction_result_disease_updated">Disease (Disease updated)</string>
+    <string name="prediction_result_medicine_updated">Medicine (Doctor confirmed)</string>
+    <string name="prediction_list_confirm_txt_title">No pending prediction</string>
+
+
+    <string name="account_edit_txt_img_upload">Upload</string>
+    <string name="dialog_confirm_discard_changes">Discard changes?</string>
+    <string name="dialog_account_info_fill_required">Please fill in the required information!</string>
+    <string name="consultation_preview_message">You: %1$s</string>
+    <string name="account_toolbar_edit">Update profile</string>
+
+    <string name="disconnect_title">No Internet connection</string>
+    <string name="disconnect_internet_btn_retry">Retry</string>
+    <string name="disconnect_message">Please check your internet connection and try again later</string>
+
+    <string name="item_add_medicine_editText_dosage">Dosage</string>
+    <string name="item_add_medicine_editText_order_layout">Other medicine</string>
+    <string name="item_add_medicine_autoComplete">Select medicine</string>
+    <string name="item_add_medicine_type_autoComplete">Type</string>
+
+    <string name="prediction_confirm_add_medicine">Add new Medicine</string>
+    <string name="prediction_confirm_txt_medicine_instruction_title">Instruction</string>
+
+    <string name="chat_dialog_attention_title">Attention!</string>
+    <string name="chat_dialog_attention_description">Welcome to the \"Get Prediction\" function.\nHere are some notices you should follow to get the most accurate result:\n1) You need to enter your symptoms clearly.\n2) You should enter at least 3 different symptoms.\n3) Negative sentences should not be used</string>
+    <string name="chat_dialog_attention_btn_understand">I understand</string>
+    <string name="chat_loader_txt">Processing</string>
+
+    <string name="dialog_prediction_edit_confirm">Please check the modified information again as you will not be able to edit the information again after clicking confirm.</string>
+    <string name="dialog_prediction_edit_confirmed">Confirm</string>
+    <string name="dialog_prediction_edit_check_again">Re-check</string>
+
+    <string name="filechooser_picture">Select Picture</string>
+
+
+    <string-array name="spinner_language">
+        <item>EN</item>
+        <item>VN</item>
+    </string-array>
+
+    <string-array name="disease_name">
+        <item>tuberculosis</item>
+        <item>malaria</item>
+        <item>dengue</item>
+        <item>pneumonia</item>
+        <item>COVID-19</item>
+        <item>acute diarrhea</item>
+        <item>sore throat</item>
+        <item>gastritis, duodenal ulcer</item>
+        <item>heart attack</item>
+        <item>Gastroesophageal reflux</item>
+    </string-array>
+
+    <string-array name="doctor_specialization">
+        <item>EN</item>
+        <item>VN</item>
+    </string-array>
+
+</resources>

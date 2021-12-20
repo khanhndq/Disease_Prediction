@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/padding"
+    android:paddingRight="@dimen/padding"
+    android:paddingBottom="@dimen/padding"
+    tools:context=".ui.home.HomeFragment">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/home_txt_title"
+                style="@style/heading_3_bold_black"
+                android:layout_width="267dp"
+                android:layout_height="wrap_content"
+                android:text="@string/home_txt_title"
+                android:textSize="36sp" />
+
+            <LinearLayout
+                android:id="@+id/home_search_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/margin_top_home_component"
+                android:background="@drawable/background_searchview_custom"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="12dp">
+
+                <ImageView
+                    android:id="@+id/home_search_view_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="?android:attr/actionModeWebSearchDrawable" />
+
+                <TextView
+                    android:id="@+id/home_search_view_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_top"
+                    android:text="@string/home_search_view" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/home_img_advertise"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/margin_top_home_component"
+                android:scaleType="fitCenter"
+                android:src="@drawable/doctor_1" />
+
+            <!--            Doctor Pending Prediction-->
+            <RelativeLayout
+                android:id="@+id/home_doctor_all_prediction_layout_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_top_home_component"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/home_doctor_all_prediction_txt_title"
+                    style="@style/subTitle_1_bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:text="@string/home_doctor_all_prediction_txt_title"
+                    android:textColor="@color/theme_1_P" />
+
+                <TextView
+                    android:id="@+id/home_doctor_all_prediction_txt_see_more"
+                    style="@style/subTitle_2_light"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:text="@string/home_txt_prediction_see_more"
+                    android:textColor="@color/theme_1_P"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/home_doctor_all_prediction_no_prediction_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/prediction_list_confirm_txt_title"
+                android:textAlignment="center"
+                android:visibility="gone" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/home_doctor_all_prediction_recycle_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/margin_top"
+                android:overScrollMode="never"
+                android:visibility="gone"
+                tools:listitem="@layout/item_prediction" />
+
+            <com.facebook.shimmer.ShimmerFrameLayout
+                android:id="@+id/home_shimmer_pending_prediction"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:animateLayoutChanges="true"
+                android:animationCache="true"
+                android:visibility="gone"
+                app:shimmer_repeat_mode="restart"
+                app:shimmer_shape="radial">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <include layout="@layout/placeholder_item_prediction" />
+
+                    <include layout="@layout/placeholder_item_prediction" />
+
+                    <include layout="@layout/placeholder_item_prediction" />
+                </LinearLayout>
+            </com.facebook.shimmer.ShimmerFrameLayout>
+
+
+            <!--            Recent Prediction-->
+            <RelativeLayout
+                android:id="@+id/home_layout_disease_history"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_top_home_component"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/home_txt_prediction_title"
+                    style="@style/subTitle_1_bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:text="@string/home_txt_prediction_title"
+                    android:textColor="@color/theme_1_P" />
+
+                <TextView
+                    android:id="@+id/home_txt_prediction_see_more"
+                    style="@style/subTitle_2_light"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:text="@string/home_txt_prediction_see_more"
+                    android:textColor="@color/theme_1_P"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/home_prediction_no_prediction_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/prediction_list_txt_title"
+                android:textAlignment="center"
+                android:visibility="gone" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/home_recycler_view_disease"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/margin_top"
+                android:overScrollMode="never"
+                tools:listitem="@layout/item_prediction" />
+
+            <com.facebook.shimmer.ShimmerFrameLayout
+                android:id="@+id/home_shimmer_prediction"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:animateLayoutChanges="true"
+                android:animationCache="true"
+                app:shimmer_repeat_mode="restart"
+                app:shimmer_shape="radial">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <include layout="@layout/placeholder_item_prediction" />
+
+                    <include layout="@layout/placeholder_item_prediction" />
+
+                    <include layout="@layout/placeholder_item_prediction" />
+                </LinearLayout>
+            </com.facebook.shimmer.ShimmerFrameLayout>
+
+
+            <!--            Consultation -->
+            <RelativeLayout
+                android:id="@+id/home_layout_consultation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_top_home_component"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/home_txt_consultation_title"
+                    style="@style/subTitle_1_bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:text="@string/home_txt_consultation_title"
+                    android:textColor="@color/theme_1_P" />
+
+                <TextView
+                    android:id="@+id/home_txt_consultation_see_more"
+                    style="@style/subTitle_2_light"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:text="@string/home_txt_consultation_see_more"
+                    android:textColor="@color/theme_1_P"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/home_consultation_no_consultation_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/consultation_list_txt_title"
+                android:textAlignment="center"
+                android:visibility="gone" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/home_recycler_view_consultation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/margin_top"
+                android:overScrollMode="never"
+                tools:listitem="@layout/item_consultation" />
+
+            <com.facebook.shimmer.ShimmerFrameLayout
+                android:id="@+id/home_shimmer_consultation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:animateLayoutChanges="true"
+                android:animationCache="true"
+                app:shimmer_repeat_mode="restart"
+                app:shimmer_shape="radial">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <include layout="@layout/placeholder_item_consultation" />
+
+                    <include layout="@layout/placeholder_item_consultation" />
+
+                    <include layout="@layout/placeholder_item_consultation" />
+                </LinearLayout>
+            </com.facebook.shimmer.ShimmerFrameLayout>
+
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

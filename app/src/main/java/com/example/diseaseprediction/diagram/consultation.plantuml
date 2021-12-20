@@ -1,0 +1,30 @@
+@startuml
+
+  namespace com.example.diseaseprediction {
+    namespace ui.consultation {
+    skinparam classAttributeIconSize 0
+      class com.example.diseaseprediction.ui.consultation.ConsultationListFragment {
+          - fUser : FirebaseUser
+          - mRef : DatabaseReference
+          {static} - TAG : String
+          - consultationLists : List<Session>
+          - consultation_list_recycler_view_main : RecyclerView
+          - consultation_list_txt_title : TextView
+          - consultation_shimmer : ShimmerFrameLayout
+          - context : Context
+          + ConsultationListFragment()
+          + onCreate()
+          + onCreateView()
+          + onViewCreated()
+          - loadListConsultation()
+      }
+    }
+  }
+  
+
+  com.example.diseaseprediction.ui.consultation.ConsultationListFragment -up-|> androidx.fragment.app.Fragment
+  com.example.diseaseprediction.ui.consultation.ConsultationListFragment o-- com.example.diseaseprediction.adapter.ConsultationAdapter : consultationAdapter
+
+
+
+@enduml

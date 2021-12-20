@@ -1,0 +1,403 @@
+@startuml
+
+title __DISEASEPREDICTION's Class Diagram__\n
+
+  namespace com.example.diseaseprediction {
+    class com.example.diseaseprediction.AccountEdit {
+        ~ isModified : boolean
+        - PICK_IMAGE_REQUEST : int
+        {static} - TAG : String
+        - account_btn_edit_done : Button
+        - account_doctor_spinner_specialization : AutoCompleteTextView
+        - account_doctor_txt_title_description : TextInputLayout
+        - account_doctor_txt_title_experience : TextInputLayout
+        - account_doctor_txt_title_specialization : TextInputLayout
+        - account_edit_txt_title_address : TextInputLayout
+        - account_edit_txt_title_email : TextInputLayout
+        - account_edit_txt_title_gender : TextInputLayout
+        - account_edit_txt_title_name : TextInputLayout
+        - account_edit_txt_title_phone : TextInputLayout
+        - account_img_avatar : CircleImageView
+        - account_img_upload : TextView
+        - account_layout_doctor : LinearLayout
+        - account_spinner_gender : AutoCompleteTextView
+        - chat_toolbar_img_pre : ImageView
+        - fUser : FirebaseUser
+        - genderAdapter : ArrayAdapter
+        - imgPath : Uri
+        - mRef : DatabaseReference
+        - nav_header_avatar : CircleImageView
+        - sRef : StorageReference
+        - specialization : ArrayList<Specialization>
+        - specializationAdapter : ArrayAdapter<Specialization>
+        + onActivityResult()
+        + onBackPressed()
+        # onCreate()
+        # onStart()
+        # onStop()
+        - checkEmpty()
+        - clearErrorOnTyping()
+        - dialogConfirm()
+        - enableEdit()
+        - findViews()
+        - getDataForUI()
+        - loadDataOfDoctor()
+        - saveDataOfDoctor()
+        - updateValue()
+        - uploadImage()
+    }
+  }
+  
+
+  namespace com.example.diseaseprediction {
+    class com.example.diseaseprediction.AccountInfo {
+        {static} - TAG : String
+        - account_info_btn_edit_done : Button
+        - account_info_spinner_gender : AutoCompleteTextView
+        - account_info_txt_title_address : TextInputLayout
+        - account_info_txt_title_email : TextInputLayout
+        - account_info_txt_title_gender : TextInputLayout
+        - account_info_txt_title_name : TextInputLayout
+        - account_info_txt_title_phone : TextInputLayout
+        - fUser : FirebaseUser
+        - genderAdapter : ArrayAdapter
+        - mRef : DatabaseReference
+        - phoneNumber : String
+        + onBackPressed()
+        # onCreate()
+        # onStart()
+        # onStop()
+        - checkEmpty()
+        - clearErrorOnTyping()
+        - dialogConfirm()
+        - loadData()
+        - saveData()
+        - setView()
+    }
+  }
+  
+
+  namespace com.example.diseaseprediction {
+    class com.example.diseaseprediction.AccountInfoDoctor {
+        {static} - TAG : String
+        - account_info_doctor_btn_edit_done : Button
+        - account_info_doctor_spinner_specialization : AutoCompleteTextView
+        - account_info_doctor_txt_title_description : TextInputLayout
+        - account_info_doctor_txt_title_experience : TextInputLayout
+        - account_info_doctor_txt_title_specialization : TextInputLayout
+        - fUser : FirebaseUser
+        - mRef : DatabaseReference
+        - specialization : ArrayList<Specialization>
+        - specializationAdapter : ArrayAdapter<Specialization>
+        # onCreate()
+        # onStart()
+        # onStop()
+        - checkEmpty()
+        - clearErrorOnTyping()
+        - dialogConfirm()
+        - loadData()
+        - saveData()
+        - setView()
+        - showErrorMess()
+    }
+  }
+  
+
+  namespace com.example.diseaseprediction {
+    class com.example.diseaseprediction.AppConstants {
+        {static} + CHATBOT_ID : String
+        {static} + DISEASE_OTHER_ID : String
+        {static} + DISEASE_OTHER_NAME : String
+        {static} + EMAIL_PATTERN : String
+    }
+  }
+  
+
+  namespace com.example.diseaseprediction {
+    class com.example.diseaseprediction.Chat {
+        {static} - LOG_TAG : String
+        {static} - REQUEST_CODE_SPEECH : int
+        - allMess : String
+        - chat_img_mic : ImageView
+        - chat_img_send : ImageView
+        - chat_recycler_view : RecyclerView
+        - chat_send_message_layout : RelativeLayout
+        - chat_toolbar_img_avatar : CircleImageView
+        - chat_toolbar_img_hamburger : ImageView
+        - chat_toolbar_img_pre : ImageView
+        - chat_toolbar_txt_name : TextView
+        - chat_txt_enter_mess : EditText
+        - checkClickPredict : boolean
+        - checkStartMessage : boolean
+        - circularDot : CircularDotsLoader
+        - fUser : FirebaseUser
+        - handler : Handler
+        - loadingText : TextView
+        - mMessage : List<Message>
+        - mRef : DatabaseReference
+        - mRef2 : DatabaseReference
+        - mRef3 : DatabaseReference
+        - mSymptom : List<Symptom>
+        - pm : PopupMenu
+        - receiverID : String
+        - sessionID : String
+        - tempSymptom : List<Symptom>
+        + chatWithDoctor()
+        + getSpeechInput()
+        + getUserChatData()
+        {static} + hideSoftKeyboard()
+        + nextChat()
+        + onBackPressed()
+        # onActivityResult()
+        # onCreate()
+        # onDestroy()
+        # onStart()
+        # onStop()
+        - chatbotCreatePrediction()
+        - checkSessionStatus()
+        - createPrediction()
+        - createPredictionSymptom()
+        - dialogConfirm()
+        - dialogPrediction()
+        - endSession()
+        - getDiseaseByNameAndCreatePredictionFirebase()
+        - getMessagesFirebase()
+        - getSymptomFirebase()
+        - getViews()
+        - searchSymptoms()
+        - setMessageFirebase()
+        - setToolbarChat()
+        - setUIByAccountType()
+        - updateIconOnWriteWatcher()
+    }
+  }
+  
+
+  namespace com.example.diseaseprediction {
+    class com.example.diseaseprediction.CodeVerify {
+        {static} + INTENT_MOBILE : String
+        {static} - TAG : String
+        - code_verify_edit_txt_code_layout : TextInputLayout
+        - code_verify_img_back : ImageView
+        - code_verify_img_next : ImageView
+        - code_verify_re_send : TextView
+        - fUser : FirebaseUser
+        - mAuth : FirebaseAuth
+        - mCallbacks : OnVerificationStateChangedCallbacks
+        - mRef : DatabaseReference
+        - mResendToken : ForceResendingToken
+        - mVerificationId : String
+        - phoneNumber : String
+        - type : int
+        # onCreate()
+        # onStart()
+        # onStop()
+        - checkCodeInput()
+        - clearErrorOnTyping()
+        - createNewFirebaseAccount()
+        - displayOKDialog()
+        - findViews()
+        - resendVerificationCode()
+        - signInWithPhoneAuthCredential()
+        - startPhoneNumberVerification()
+        - verifyPhoneNumberWithCode()
+    }
+  }
+  
+
+  namespace com.example.diseaseprediction {
+    class com.example.diseaseprediction.GetStarted {
+        - login_started_btn_next : Button
+        # onCreate()
+    }
+  }
+  
+
+  namespace com.example.diseaseprediction {
+    class com.example.diseaseprediction.Login {
+        {static} + INTENT_MOBILE : String
+        {static} - RC_SIGN_IN : int
+        {static} - TAG : String
+        - loginButton : ImageView
+        - login_btn_login_by_google : Button
+        - login_txt_by_type : TextView
+        - login_txt_title : TextView
+        - mGoogleSignInClient : GoogleSignInClient
+        - mRef : DatabaseReference
+        - phoneInputLayout : TextInputLayout
+        - type : int
+        + onActivityResult()
+        + onStart()
+        # onCreate()
+        # onStop()
+        - CreateNewAccount()
+        - addCountryCode()
+        - checkPhoneNumberInput()
+        - clearErrorOnTyping()
+        - firebaseAuthWithGoogle()
+        - initUIElements()
+        - signInWithFirebase()
+        - signInWithPhone()
+        - updateUI()
+    }
+  }
+  
+
+  namespace com.example.diseaseprediction {
+    class com.example.diseaseprediction.MainActivity {
+        {static} + FRAGMENT : String
+        {static} - TAG : String
+        - drawer : DrawerLayout
+        - fUser : FirebaseUser
+        - mAppBarConfiguration : AppBarConfiguration
+        - mRef : DatabaseReference
+        - navHostFragment : NavHostFragment
+        - nav_account_info : ConstraintLayout
+        - nav_header_avatar : CircleImageView
+        - nav_header_txt_acc_name : TextView
+        - nav_header_txt_acc_phone : TextView
+        - nav_shimmer : ShimmerFrameLayout
+        - navigationView : NavigationView
+        - shimmer_divider : View
+        + onCreateOptionsMenu()
+        + onOptionsItemSelected()
+        + onSupportNavigateUp()
+        + setActionBarTitle()
+        + setIconToolbar()
+        # onCreate()
+        # onStart()
+        # onStop()
+        - checkDataOfAccount()
+        - checkDataOfAccountDoctor()
+        - findViews()
+        - getUIofNavHeader()
+        - setNavigation()
+    }
+  }
+  
+
+  namespace com.example.diseaseprediction {
+    class com.example.diseaseprediction.PredictionConfirm {
+        ~ diseasesList : ArrayList<Disease>
+        {static} - LOG_TAG : String
+        - diseaseAdapter : ArrayAdapter
+        - fUser : FirebaseUser
+        - mRef : DatabaseReference
+        - predictionStatus : int
+        - prediction_confirm_disease_other : EditText
+        - prediction_confirm_disease_other_layout : TextInputLayout
+        - prediction_confirm_disease_select : AutoCompleteTextView
+        - prediction_confirm_disease_select_layout : TextInputLayout
+        - prediction_confirm_prediction_confirm_btn : Button
+        - prediction_confirm_prediction_correct_btn : Button
+        - prediction_confirm_prediction_wrong_btn : Button
+        - prediction_confirm_toolbar_img_pre : ImageView
+        - prediction_confirm_txt_disease_description_result : TextView
+        - prediction_confirm_txt_disease_prediction_result : TextView
+        # onCreate()
+        # onStart()
+        # onStop()
+        - changeUIIncorrect()
+        - checkPredictionStatus()
+        - displayConfirmDialog()
+        - displayMessagesList()
+        - displayThanksDialog()
+        - getDiseasesListAndLoadUI()
+        - getViews()
+        - handleSaveData()
+        - loadPatientDescription()
+        - savePrediction()
+        - setUpUI()
+    }
+  }
+  
+
+  namespace com.example.diseaseprediction {
+    class com.example.diseaseprediction.PredictionResult {
+        {static} + INTENT_EXTRA_PREDICTION : String
+        {static} - TAG : String
+        - adviseAdapter : ArrayAdapter<String>
+        - fUser : FirebaseUser
+        - intent : Intent
+        - mRef : DatabaseReference
+        - mRef2 : DatabaseReference
+        - prediction_btn_back : Button
+        - prediction_btn_contact_doctor : Button
+        - prediction_img_status : ImageView
+        - prediction_layout_contact_doctor : LinearLayout
+        - prediction_listview_advice_result : TextView
+        - prediction_toolbar_img_pre : ImageView
+        - prediction_txt_contact_doctor_click : TextView
+        - prediction_txt_disease_description_result : TextView
+        - prediction_txt_disease_result : TextView
+        - prediction_txt_disease_title : TextView
+        - prediction_txt_status : TextView
+        - sessionID : String
+        {static} + setListViewHeightBasedOnChildren()
+        # onCreate()
+        # onStart()
+        # onStop()
+        - createSessionWithCDoctor()
+        - findView()
+        - getAdviseList()
+        - getDataToUI()
+        - updateDoctorSessionInPrediction()
+    }
+  }
+  
+
+  namespace com.example.diseaseprediction {
+    class com.example.diseaseprediction.testActivity {
+        ~ firebaseUser : FirebaseUser
+        ~ myRef : DatabaseReference
+        {static} - REQUEST_CODE_SPEECH : int
+        # onCreate()
+        ~ addDataSymptom()
+    }
+  }
+  
+
+  com.example.diseaseprediction.AccountEdit -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.diseaseprediction.AccountEdit o-- com.example.diseaseprediction.object.Specialization : ds
+  com.example.diseaseprediction.AccountEdit o-- com.example.diseaseprediction.object.Account : mAccount
+  com.example.diseaseprediction.AccountEdit o-- com.example.diseaseprediction.object.DoctorInfo : mDoctor
+  com.example.diseaseprediction.AccountEdit o-- com.example.diseaseprediction.listener.NetworkChangeListener : networkChangeListener
+  com.example.diseaseprediction.AccountInfo -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.diseaseprediction.AccountInfo o-- com.example.diseaseprediction.object.Account : mAccount
+  com.example.diseaseprediction.AccountInfo o-- com.example.diseaseprediction.listener.NetworkChangeListener : networkChangeListener
+  com.example.diseaseprediction.AccountInfoDoctor -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.diseaseprediction.AccountInfoDoctor o-- com.example.diseaseprediction.object.Specialization : ds
+  com.example.diseaseprediction.AccountInfoDoctor o-- com.example.diseaseprediction.object.DoctorInfo : mDoctor
+  com.example.diseaseprediction.AccountInfoDoctor o-- com.example.diseaseprediction.listener.NetworkChangeListener : networkChangeListener
+  com.example.diseaseprediction.Chat -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.diseaseprediction.Chat o-- com.example.diseaseprediction.adapter.ChatAdapter : chatAdapter
+  com.example.diseaseprediction.Chat o-- com.example.diseaseprediction.model.TextClassificationClient : client
+  com.example.diseaseprediction.Chat o-- com.example.diseaseprediction.listener.NetworkChangeListener : networkChangeListener
+  com.example.diseaseprediction.CodeVerify -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.diseaseprediction.CodeVerify o-- com.example.diseaseprediction.object.Account : mAccount
+  com.example.diseaseprediction.CodeVerify o-- com.example.diseaseprediction.listener.NetworkChangeListener : networkChangeListener
+  com.example.diseaseprediction.GetStarted -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.diseaseprediction.Login -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.diseaseprediction.Login o-- com.example.diseaseprediction.listener.NetworkChangeListener : networkChangeListener
+  com.example.diseaseprediction.MainActivity -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.diseaseprediction.MainActivity o-- com.example.diseaseprediction.object.Account : mAccount
+  com.example.diseaseprediction.MainActivity o-- com.example.diseaseprediction.object.DoctorInfo : mDoctor
+  com.example.diseaseprediction.MainActivity o-- com.example.diseaseprediction.listener.NetworkChangeListener : networkChangeListener
+  com.example.diseaseprediction.PredictionConfirm -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.diseaseprediction.PredictionConfirm o-- com.example.diseaseprediction.listener.NetworkChangeListener : networkChangeListener
+  com.example.diseaseprediction.PredictionConfirm o-- com.example.diseaseprediction.object.Prediction : prediction
+  com.example.diseaseprediction.PredictionConfirm o-- com.example.diseaseprediction.object.Disease : selectedDisease
+  com.example.diseaseprediction.PredictionResult -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.diseaseprediction.PredictionResult o-- com.example.diseaseprediction.object.Prediction : mPrediction
+  com.example.diseaseprediction.PredictionResult o-- com.example.diseaseprediction.listener.NetworkChangeListener : networkChangeListener
+  com.example.diseaseprediction.testActivity -up-|> androidx.appcompat.app.AppCompatActivity
+
+
+right footer
+
+
+PlantUML diagram generated by SketchIt! (https://bitbucket.org/pmesmeur/sketch.it)
+For more information about this tool, please contact philippe.mesmeur@gmail.com
+endfooter
+
+@enduml

@@ -1,0 +1,490 @@
+@startuml
+
+title __DISEASE_PREDICTION.APP's Class Diagram__\n
+
+  namespace com.example.diseaseprediction {
+    class com.example.diseaseprediction.AccountEdit {
+    }
+  }
+  
+
+  namespace com.example.diseaseprediction {
+    class com.example.diseaseprediction.AccountInfo {
+    }
+  }
+  
+
+  namespace com.example.diseaseprediction {
+    class com.example.diseaseprediction.AccountInfoDoctor {
+    }
+  }
+  
+
+  namespace com.example.diseaseprediction {
+    class com.example.diseaseprediction.AppConstants {
+    }
+  }
+  
+
+  namespace com.example.diseaseprediction {
+    class com.example.diseaseprediction.BuildConfig {
+    }
+  }
+  
+
+  namespace com.example.diseaseprediction {
+    class com.example.diseaseprediction.Chat {
+    }
+  }
+  
+
+  namespace com.example.diseaseprediction {
+    class com.example.diseaseprediction.CodeVerify {
+    }
+  }
+  
+
+  namespace com.example.diseaseprediction {
+    class com.example.diseaseprediction.GetStarted {
+    }
+  }
+  
+
+  namespace com.example.diseaseprediction {
+    class com.example.diseaseprediction.Login {
+    }
+  }
+  
+
+  namespace com.example.diseaseprediction {
+    class com.example.diseaseprediction.MainActivity {
+    }
+  }
+  
+
+  namespace com.example.diseaseprediction {
+    class com.example.diseaseprediction.PredictionConfirm {
+    }
+  }
+  
+
+  namespace com.example.diseaseprediction {
+    class com.example.diseaseprediction.PredictionResult {
+    }
+  }
+  
+
+  namespace com.example.diseaseprediction {
+    namespace adapter {
+      class com.example.diseaseprediction.adapter.AlertAdapter {
+      }
+    }
+  }
+  
+
+  namespace com.example.diseaseprediction {
+    namespace adapter {
+      class com.example.diseaseprediction.adapter.ChatAdapter {
+      }
+    }
+  }
+  
+
+  namespace com.example.diseaseprediction {
+    namespace adapter {
+      class com.example.diseaseprediction.adapter.ConsultationAdapter {
+      }
+    }
+  }
+  
+
+  namespace com.example.diseaseprediction {
+    namespace adapter {
+      class com.example.diseaseprediction.adapter.PredictionAdapter {
+      }
+    }
+  }
+  
+
+  namespace com.example.diseaseprediction {
+    namespace listener {
+      interface com.example.diseaseprediction.listener.MyClickListener {
+      }
+    }
+  }
+  
+
+  namespace com.example.diseaseprediction {
+    namespace listener {
+      class com.example.diseaseprediction.listener.NetworkChangeListener {
+      }
+    }
+  }
+  
+
+  namespace com.example.diseaseprediction {
+    namespace model {
+      class com.example.diseaseprediction.model.Result {
+      }
+    }
+  }
+  
+
+  namespace com.example.diseaseprediction {
+    namespace model {
+      class com.example.diseaseprediction.model.TextClassificationClient {
+      }
+    }
+  }
+  
+
+  namespace com.example.diseaseprediction {
+    namespace object {
+      class com.example.diseaseprediction.object.Account {
+      }
+    }
+  }
+  
+
+  namespace com.example.diseaseprediction {
+    namespace object {
+      class com.example.diseaseprediction.object.Advise {
+      }
+    }
+  }
+  
+
+  namespace com.example.diseaseprediction {
+    namespace object {
+      class com.example.diseaseprediction.object.Disease {
+      }
+    }
+  }
+  
+
+  namespace com.example.diseaseprediction {
+    namespace object {
+      class com.example.diseaseprediction.object.DiseaseAdvise {
+      }
+    }
+  }
+  
+
+  namespace com.example.diseaseprediction {
+    namespace object {
+      class com.example.diseaseprediction.object.DoctorInfo {
+      }
+    }
+  }
+  
+
+  namespace com.example.diseaseprediction {
+    namespace object {
+      class com.example.diseaseprediction.object.Medicine {
+      }
+    }
+  }
+  
+
+  namespace com.example.diseaseprediction {
+    namespace object {
+      class com.example.diseaseprediction.object.Message {
+      }
+    }
+  }
+  
+
+  namespace com.example.diseaseprediction {
+    namespace object {
+      class com.example.diseaseprediction.object.Prediction {
+      }
+    }
+  }
+  
+
+  namespace com.example.diseaseprediction {
+    namespace object {
+      class com.example.diseaseprediction.object.PredictionMedicine {
+      }
+    }
+  }
+  
+
+  namespace com.example.diseaseprediction {
+    namespace object {
+      class com.example.diseaseprediction.object.PredictionSymptom {
+      }
+    }
+  }
+  
+
+  namespace com.example.diseaseprediction {
+    namespace object {
+      class com.example.diseaseprediction.object.RecommendSymptom {
+      }
+    }
+  }
+  
+
+  namespace com.example.diseaseprediction {
+    namespace object {
+      class com.example.diseaseprediction.object.Session {
+      }
+    }
+  }
+  
+
+  namespace com.example.diseaseprediction {
+    namespace object {
+      class com.example.diseaseprediction.object.Specialization {
+      }
+    }
+  }
+  
+
+  namespace com.example.diseaseprediction {
+    namespace object {
+      class com.example.diseaseprediction.object.Symptom {
+      }
+    }
+  }
+  
+
+  namespace com.example.diseaseprediction {
+    namespace object {
+      class com.example.diseaseprediction.object.SymptomMedicine {
+      }
+    }
+  }
+  
+
+  namespace com.example.diseaseprediction {
+    class com.example.diseaseprediction.testActivity {
+    }
+  }
+  
+
+  namespace com.example.diseaseprediction {
+    namespace tokenize {
+      class com.example.diseaseprediction.tokenize.DataPreprocessor {
+      }
+    }
+  }
+  
+
+  namespace com.example.diseaseprediction {
+    namespace tokenize {
+      class com.example.diseaseprediction.tokenize.FWObject {
+      }
+    }
+  }
+  
+
+  namespace com.example.diseaseprediction {
+    namespace tokenize {
+      class com.example.diseaseprediction.tokenize.Node {
+      }
+    }
+  }
+  
+
+  namespace com.example.diseaseprediction {
+    namespace tokenize {
+      class com.example.diseaseprediction.tokenize.RDRsegmenter {
+      }
+    }
+  }
+  
+
+  namespace com.example.diseaseprediction {
+    namespace tokenize {
+      class com.example.diseaseprediction.tokenize.Regex {
+      }
+    }
+  }
+  
+
+  namespace com.example.diseaseprediction {
+    namespace tokenize {
+      interface com.example.diseaseprediction.tokenize.StringConst {
+      }
+    }
+  }
+  
+
+  namespace com.example.diseaseprediction {
+    namespace tokenize {
+      class com.example.diseaseprediction.tokenize.StringUtils {
+      }
+    }
+  }
+  
+
+  namespace com.example.diseaseprediction {
+    namespace tokenize {
+      class com.example.diseaseprediction.tokenize.Tokenizer {
+      }
+    }
+  }
+  
+
+  namespace com.example.diseaseprediction {
+    namespace tokenize {
+      class com.example.diseaseprediction.tokenize.Utils {
+      }
+    }
+  }
+  
+
+  namespace com.example.diseaseprediction {
+    namespace tokenize {
+      class com.example.diseaseprediction.tokenize.Vocabulary {
+      }
+    }
+  }
+  
+
+  namespace com.example.diseaseprediction {
+    namespace tokenize {
+      class com.example.diseaseprediction.tokenize.WordTag {
+      }
+    }
+  }
+  
+
+  namespace com.example.diseaseprediction {
+    namespace ui.account {
+      class com.example.diseaseprediction.ui.account.AccountFragment {
+      }
+    }
+  }
+  
+
+  namespace com.example.diseaseprediction {
+    namespace ui.alert {
+      class com.example.diseaseprediction.ui.alert.AlertFragment {
+      }
+    }
+  }
+  
+
+  namespace com.example.diseaseprediction {
+    namespace ui.consultation {
+      class com.example.diseaseprediction.ui.consultation.ConsultationListFragment {
+      }
+    }
+  }
+  
+
+  namespace com.example.diseaseprediction {
+    namespace ui.home {
+      class com.example.diseaseprediction.ui.home.HomeFragment {
+      }
+    }
+  }
+  
+
+  namespace com.example.diseaseprediction {
+    namespace ui.prediction {
+      class com.example.diseaseprediction.ui.prediction.PredictionListFragment {
+      }
+    }
+  }
+  
+
+  namespace com.example.diseaseprediction {
+    namespace ui.prediction {
+      namespace istConfirm {
+        class com.example.diseaseprediction.ui.predictionListConfirm.PredictionListPending {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.example.diseaseprediction {
+    namespace ui.settings {
+      class com.example.diseaseprediction.ui.settings.SettingsFragment {
+      }
+    }
+  }
+  
+
+  com.example.diseaseprediction.AccountEdit -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.diseaseprediction.AccountEdit o-- com.example.diseaseprediction.object.Specialization : ds
+  com.example.diseaseprediction.AccountEdit o-- com.example.diseaseprediction.object.Account : mAccount
+  com.example.diseaseprediction.AccountEdit o-- com.example.diseaseprediction.object.DoctorInfo : mDoctor
+  com.example.diseaseprediction.AccountEdit o-- com.example.diseaseprediction.listener.NetworkChangeListener : networkChangeListener
+  com.example.diseaseprediction.AccountInfo -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.diseaseprediction.AccountInfo o-- com.example.diseaseprediction.object.Account : mAccount
+  com.example.diseaseprediction.AccountInfo o-- com.example.diseaseprediction.listener.NetworkChangeListener : networkChangeListener
+  com.example.diseaseprediction.AccountInfoDoctor -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.diseaseprediction.AccountInfoDoctor o-- com.example.diseaseprediction.object.Specialization : ds
+  com.example.diseaseprediction.AccountInfoDoctor o-- com.example.diseaseprediction.object.DoctorInfo : mDoctor
+  com.example.diseaseprediction.AccountInfoDoctor o-- com.example.diseaseprediction.listener.NetworkChangeListener : networkChangeListener
+  com.example.diseaseprediction.Chat -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.diseaseprediction.Chat o-- com.example.diseaseprediction.adapter.ChatAdapter : chatAdapter
+  com.example.diseaseprediction.Chat o-- com.example.diseaseprediction.model.TextClassificationClient : client
+  com.example.diseaseprediction.Chat o-- com.example.diseaseprediction.listener.NetworkChangeListener : networkChangeListener
+  com.example.diseaseprediction.CodeVerify -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.diseaseprediction.CodeVerify o-- com.example.diseaseprediction.object.Account : mAccount
+  com.example.diseaseprediction.CodeVerify o-- com.example.diseaseprediction.listener.NetworkChangeListener : networkChangeListener
+  com.example.diseaseprediction.GetStarted -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.diseaseprediction.Login -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.diseaseprediction.Login o-- com.example.diseaseprediction.listener.NetworkChangeListener : networkChangeListener
+  com.example.diseaseprediction.MainActivity -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.diseaseprediction.MainActivity o-- com.example.diseaseprediction.object.Account : mAccount
+  com.example.diseaseprediction.MainActivity o-- com.example.diseaseprediction.object.DoctorInfo : mDoctor
+  com.example.diseaseprediction.MainActivity o-- com.example.diseaseprediction.listener.NetworkChangeListener : networkChangeListener
+  com.example.diseaseprediction.PredictionConfirm -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.diseaseprediction.PredictionConfirm o-- com.example.diseaseprediction.listener.NetworkChangeListener : networkChangeListener
+  com.example.diseaseprediction.PredictionConfirm o-- com.example.diseaseprediction.object.Prediction : prediction
+  com.example.diseaseprediction.PredictionConfirm o-- com.example.diseaseprediction.object.Disease : selectedDisease
+  com.example.diseaseprediction.PredictionResult -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.diseaseprediction.PredictionResult o-- com.example.diseaseprediction.object.Prediction : mPrediction
+  com.example.diseaseprediction.PredictionResult o-- com.example.diseaseprediction.listener.NetworkChangeListener : networkChangeListener
+  com.example.diseaseprediction.adapter.AlertAdapter -up-|> androidx.recyclerview.widget.RecyclerView.Adapter
+  com.example.diseaseprediction.adapter.ChatAdapter -up-|> androidx.recyclerview.widget.RecyclerView.Adapter
+  com.example.diseaseprediction.adapter.ChatAdapter o-- com.example.diseaseprediction.listener.MyClickListener : listener
+  com.example.diseaseprediction.adapter.ConsultationAdapter -up-|> androidx.recyclerview.widget.RecyclerView.Adapter
+  com.example.diseaseprediction.adapter.PredictionAdapter -up-|> androidx.recyclerview.widget.RecyclerView.Adapter
+  com.example.diseaseprediction.listener.NetworkChangeListener -up-|> android.content.BroadcastReceiver
+  com.example.diseaseprediction.model.Result .up.|> java.lang.Comparable
+  com.example.diseaseprediction.model.TextClassificationClient o-- com.example.diseaseprediction.tokenize.RDRsegmenter : rdRsegmenter
+  com.example.diseaseprediction.model.TextClassificationClient o-- com.example.diseaseprediction.tokenize.Vocabulary : vocabulary
+  com.example.diseaseprediction.object.Prediction .up.|> android.os.Parcelable
+  com.example.diseaseprediction.testActivity -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.diseaseprediction.tokenize.DataPreprocessor o-- com.example.diseaseprediction.tokenize.RDRsegmenter : initialSegmenter
+  com.example.diseaseprediction.tokenize.Node o-- com.example.diseaseprediction.tokenize.FWObject : condition
+  com.example.diseaseprediction.tokenize.Node o-- com.example.diseaseprediction.tokenize.Node : exceptNode
+  com.example.diseaseprediction.tokenize.Node o-- com.example.diseaseprediction.tokenize.Node : fatherNode
+  com.example.diseaseprediction.tokenize.Node o-- com.example.diseaseprediction.tokenize.Node : ifnotNode
+  com.example.diseaseprediction.tokenize.RDRsegmenter o-- com.example.diseaseprediction.tokenize.Node : root
+  com.example.diseaseprediction.ui.account.AccountFragment -up-|> androidx.fragment.app.Fragment
+  com.example.diseaseprediction.ui.account.AccountFragment o-- com.example.diseaseprediction.object.Specialization : ds
+  com.example.diseaseprediction.ui.account.AccountFragment o-- com.example.diseaseprediction.object.Account : mAccount
+  com.example.diseaseprediction.ui.account.AccountFragment o-- com.example.diseaseprediction.object.DoctorInfo : mDoctor
+  com.example.diseaseprediction.ui.alert.AlertFragment -up-|> androidx.fragment.app.Fragment
+  com.example.diseaseprediction.ui.consultation.ConsultationListFragment -up-|> androidx.fragment.app.Fragment
+  com.example.diseaseprediction.ui.consultation.ConsultationListFragment o-- com.example.diseaseprediction.adapter.ConsultationAdapter : consultationAdapter
+  com.example.diseaseprediction.ui.home.HomeFragment -up-|> androidx.fragment.app.Fragment
+  com.example.diseaseprediction.ui.home.HomeFragment o-- com.example.diseaseprediction.adapter.ConsultationAdapter : consultationAdapter
+  com.example.diseaseprediction.ui.home.HomeFragment o-- com.example.diseaseprediction.adapter.PredictionAdapter : doctorPredictionPendingListAdapter
+  com.example.diseaseprediction.ui.home.HomeFragment o-- com.example.diseaseprediction.object.DoctorInfo : mDoctor
+  com.example.diseaseprediction.ui.home.HomeFragment o-- com.example.diseaseprediction.adapter.PredictionAdapter : patientPredictionAdapter
+  com.example.diseaseprediction.ui.prediction.PredictionListFragment -up-|> androidx.fragment.app.Fragment
+  com.example.diseaseprediction.ui.prediction.PredictionListFragment o-- com.example.diseaseprediction.adapter.PredictionAdapter : patientPredictionAdapter
+  com.example.diseaseprediction.ui.predictionListConfirm.PredictionListPending -up-|> androidx.fragment.app.Fragment
+  com.example.diseaseprediction.ui.predictionListConfirm.PredictionListPending o-- com.example.diseaseprediction.adapter.PredictionAdapter : doctorPredictionPendingListAdapter
+  com.example.diseaseprediction.ui.predictionListConfirm.PredictionListPending o-- com.example.diseaseprediction.object.DoctorInfo : mDoctor
+  com.example.diseaseprediction.ui.settings.SettingsFragment -up-|> androidx.fragment.app.Fragment
+
+
+right footer
+
+
+PlantUML diagram generated by SketchIt! (https://bitbucket.org/pmesmeur/sketch.it)
+For more information about this tool, please contact philippe.mesmeur@gmail.com
+endfooter
+
+@enduml

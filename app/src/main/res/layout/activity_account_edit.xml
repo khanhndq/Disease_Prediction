@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context=".AccountEdit">
+
+    <RelativeLayout
+        android:id="@+id/chat_tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        android:paddingLeft="@dimen/margin_top"
+        android:paddingRight="@dimen/margin_top"
+        app:layout_anchorGravity="bottom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/chat_toolbar_img_pre"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:padding="2dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_back_1" />
+
+
+        <TextView
+            android:id="@+id/chat_toolbar_txt_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal"
+            style="@style/heading_7_bold"
+            android:text="@string/account_toolbar_edit" />
+    </RelativeLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:paddingLeft="@dimen/padding"
+        android:paddingRight="@dimen/padding"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chat_tool_bar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/account_edit_txt_title"
+                style="@style/TextAppearance.MaterialComponents.Headline6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:gravity="start"
+                android:textColor="@color/theme_1_P"
+                android:visibility="visible"
+                android:text="@string/account_info_txt_title"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.495"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/account_edit_txt_title_name"
+                style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:counterEnabled="true"
+                app:counterMaxLength="@integer/length_account_info_name"
+                android:layout_marginTop="24dp"
+                app:boxBackgroundColor="@color/background_B1_lightMode">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/account_edit_edit_txt_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:maxLength="@integer/length_account_info_name"
+                    android:hint="@string/account_txt_title_name"
+                    android:inputType="textPersonName" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/account_edit_txt_title_gender"
+                style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_top"
+                app:boxBackgroundColor="@color/background_B1_lightMode">
+
+                <AutoCompleteTextView
+                    android:id="@+id/account_edit_spinner_gender"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/account_txt_title_gender"
+                    android:inputType="none" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                android:id="@+id/login_txt_country_code_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_top"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/login_txt_country_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:backgroundTint="@color/theme_1_P"
+                    android:text="+84"
+                    android:drawablePadding="8dp"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    app:drawableLeftCompat="@drawable/vietnam_flag" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/account_edit_txt_title_phone"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_top"
+                    app:counterMaxLength="@integer/length_account_info_phone"
+                    app:counterEnabled="true"
+                    app:boxBackgroundColor="@color/background_B1_lightMode">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/account_edit_edit_txt_phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:hint="@string/account_txt_title_phone"
+                        android:inputType="phone" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/account_edit_txt_title_email"
+                style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_top"
+                app:counterEnabled="true"
+                app:counterMaxLength="@integer/length_account_info_email"
+                app:boxBackgroundColor="@color/background_B1_lightMode">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/account_edit_edit_txt_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:maxLength="@integer/length_account_info_email"
+                    android:hint="@string/account_txt_title_email"
+                    android:inputType="textEmailAddress" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/account_edit_txt_title_address"
+                style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_top"
+                app:counterEnabled="true"
+                app:counterMaxLength="@integer/length_account_info_address"
+                app:boxBackgroundColor="@color/background_B1_lightMode">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/account_edit_edit_txt_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:maxLength="@integer/length_account_info_address"
+                    android:ems="10"
+                    android:hint="@string/account_txt_title_address"
+                    android:inputType="textPersonName" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!--            Doctor Layout-->
+            <LinearLayout
+                android:id="@+id/account_edit_layout_doctor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/account_edit_txt_title_doctor"
+                    style="@style/TextAppearance.MaterialComponents.Headline6"
+                    android:layout_width="match_parent"
+                    android:textColor="@color/theme_1_P"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_top"
+                    android:gravity="start"
+                    android:text="@string/account_info_doctor_txt_title"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.495"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/account_edit_doctor_txt_title_specialization"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_top"
+                    android:enabled="false"
+                    app:boxBackgroundColor="@color/background_B1_lightMode">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/account_edit_doctor_spinner_specialization"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/account_info_doctor_specialization"
+                        android:inputType="none" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/account_edit_doctor_txt_title_experience"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_top"
+                    android:enabled="false"
+                    app:boxBackgroundColor="@color/background_B1_lightMode">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/account_edit_doctor_edit_txt_experience"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:hint="@string/account_info_doctor_experience"
+                        android:inputType="number" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/account_edit_doctor_txt_title_description"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_top"
+                    app:counterEnabled="true"
+                    app:counterMaxLength="@integer/length_account_info_doctor_description"
+                    app:boxBackgroundColor="@color/background_B1_lightMode">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/account_edit_doctor_edit_txt_title_description"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:maxLength="@integer/length_account_info_doctor_description"
+                        android:ems="10"
+                        android:hint="@string/account_info_doctor_description"
+                        android:inputType="textMultiLine"
+                        android:overScrollMode="always" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/account_edit_btn_edit_done"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_top"
+                android:layout_marginBottom="20dp"
+                android:backgroundTint="@color/theme_1_P"
+                android:text="@string/account_btn_edit_done"
+                android:textColor="@color/background_B1_lightMode"
+                app:cornerRadius="@dimen/btn_corner_radius" />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

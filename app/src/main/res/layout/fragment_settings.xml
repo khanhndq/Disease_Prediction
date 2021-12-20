@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/padding"
+    android:paddingRight="@dimen/padding"
+    tools:context=".ui.settings.SettingsFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_height"
+        android:layout_marginTop="@dimen/margin_top"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/settings_txt_turn_notification"
+            style="@style/subTitle_1"
+            android:layout_width="149dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="@string/settings_txt_turn_notification" />
+
+        <Switch
+            android:id="@+id/settings_btn_swith_notification"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <!--    <LinearLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="@dimen/line_height"-->
+    <!--        android:orientation="horizontal">-->
+
+    <!--        <TextView-->
+    <!--            android:id="@+id/settings_txt_select_language"-->
+    <!--            style="@style/subTitle_1"-->
+    <!--            android:layout_width="297dp"-->
+    <!--            android:layout_height="match_parent"-->
+    <!--            android:layout_weight="1"-->
+    <!--            android:gravity="center_vertical"-->
+    <!--            android:text="@string/settings_txt_select_language" />-->
+
+    <!--        <Spinner-->
+    <!--            android:id="@+id/settings_spinner_language"-->
+    <!--            android:layout_width="115dp"-->
+    <!--            android:layout_height="match_parent"-->
+    <!--            android:layout_weight="1"-->
+    <!--            android:gravity="right" />-->
+
+    <!--    </LinearLayout>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_height"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/settings_txt_title_version"
+            style="@style/subTitle_1"
+            android:layout_width="149dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="@string/settings_txt_title_version" />
+
+        <TextView
+            android:id="@+id/settings_txt_version"
+            style="@style/subTitle_1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|right"
+            android:paddingRight="15dp"
+            android:text="@string/settings_txt_version" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/settings_txt_title_team"
+        style="@style/subTitle_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:text="Copyright by NEON" />
+
+</LinearLayout>

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Chat">
+
+<!--    toolbar-->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/chat_tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        android:paddingLeft="@dimen/margin_top"
+        android:paddingRight="@dimen/margin_top"
+        app:layout_anchorGravity="bottom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/chat_toolbar_img_pre"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:padding="2dp"
+            android:src="@drawable/ic_back_1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/chat_toolbar_img_avatar"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="25dp"
+            android:src="@drawable/background_avatar"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/chat_toolbar_img_pre"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/chat_toolbar_txt_name"
+            style="@style/subTitle_1_bold"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_top"
+            android:layout_marginEnd="@dimen/margin_top"
+            android:ellipsize="end"
+            android:fadeScrollbars="false"
+            android:singleLine="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/chat_toolbar_img_hamburger"
+            app:layout_constraintStart_toEndOf="@+id/chat_toolbar_img_avatar"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Account" />
+
+        <ImageView
+            android:id="@+id/chat_toolbar_img_hamburger"
+            android:layout_width="25dp"
+            android:layout_height="30dp"
+            android:rotationY="180"
+            android:src="@drawable/ic_more"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:id="@+id/elevation"
+        android:layout_width="match_parent"
+        android:layout_height="6dp"
+        android:elevation="1dp"
+        android:background="@drawable/shadow"
+        app:layout_constraintTop_toBottomOf="@+id/chat_tool_bar" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/chat_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/chat_send_message_layout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chat_tool_bar">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <RelativeLayout
+        android:id="@+id/chat_send_message_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <EditText
+            android:id="@+id/chat_txt_enter_mess"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_toLeftOf="@+id/chat_layout_right_send"
+            android:backgroundTint="@color/theme_1_P"
+            android:inputType="textPersonName" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/chat_layout_right_send"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/chat_img_send"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:foregroundGravity="center"
+                android:src="@drawable/ic_chat_send"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/chat_img_mic"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:foregroundGravity="center"
+                android:src="@drawable/ic_chat_mic"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </RelativeLayout>
+
+    <com.agrawalsuneet.dotsloader.loaders.CircularDotsLoader
+        android:id="@+id/circularDot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:loader_animDur="100"
+        app:loader_bigCircleRadius="18dp"
+        app:loader_circleRadius="6dp"
+        app:loader_defaultColor="@color/theme_1_P_light"
+        app:loader_firstShadowColor="@color/theme_1_S_dark"
+        app:loader_secondShadowColor="@color/theme_1_S_dark"
+        app:loader_selectedColor="@color/theme_1_S_dark"
+        app:loader_showRunningShadow="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/loadingText"
+        style="@style/subTitle_1_bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.571"
+        tools:text="@string/chat_loader_txt"
+        android:textSize="13sp"
+        android:visibility="gone"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

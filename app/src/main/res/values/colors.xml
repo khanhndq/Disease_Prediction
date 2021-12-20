@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="gray">#D1D1D1</color>
+    <color name="apple_gray">#66666666</color>
+
+    <color name="theme_1_P_dark">#387BAC</color>
+    <color name="theme_1_P">#2B6497</color>
+    <color name="theme_1_P_trans_20">#992B6497</color>
+    <color name="theme_1_P_light">#83B9FF</color>
+    <color name="theme_1_P_light_trans_80">#CC83B9FF</color>
+    <color name="theme_1_S_dark">#4D82CB</color>
+    <color name="theme_1_S">#82B1FF</color>
+    <color name="theme_1_S_light">#B6E3FF</color>
+
+    <color name="background_B1_darkMode">#292929</color>
+    <color name="background_B2_darkMode">#313131</color>
+    <color name="background_B3_darkMode">#80252525</color>
+    <color name="background_B1_lightMode">#FFFFFF</color>
+    <color name="background_B2_lightMode">#F8F8F8</color>
+    <color name="background_B3_lightMode">#80F5F5F5</color>
+    <color name="background_search">#26767680</color>
+    <color name="background_chat">#E4E6EA</color>
+    <color name="background_home_list">#F5F5F5</color>
+    <color name="background_placeholder">#B3B3B3</color>
+    <color name="background_avatar">#E3F6FF</color>
+
+    <color name="text_T1_lightMode">#000000</color>
+    <color name="text_T2_lightMode">#666666</color>
+    <color name="text_T1_darkMode">#FFFFFF</color>
+    <color name="text_T2_darkMode">#CCCCCC</color>
+    <color name="text_search">#993C3C43</color>
+    <color name="text_warning">#ff9931</color>
+    <color name="text_success">#3bbf45</color>
+    <color name="text_error">#ff2b55</color>
+
+
+</resources>
